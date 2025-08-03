@@ -1,0 +1,43 @@
+/* Reset and layout */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent entire page scroll */
+  font-family: sans-serif;
+}
+
+/* Layout: App.jsx uses d-flex */
+.app-container {
+  display: flex;
+  height: 100vh; /* Ensure fixed screen height */
+  overflow: hidden;
+}
+
+/* Theme classes */
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.text-dark {
+  color: #212529 !important;
+}
+
+/* Bootstrap flex utility override if needed */
+.d-flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
